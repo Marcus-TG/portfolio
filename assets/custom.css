@@ -1,0 +1,21 @@
+/* 1. Make the container div and all its children transparent */
+.relative.flex.flex-col.min-h-screen,
+.bg-neutral-50, 
+.dark .dark\:bg-neutral-800, 
+.bg-neutral,
+main,
+section,
+article {
+    background-color: transparent !important;
+}
+
+
+
+/* 3. Ensure the canvas fills the space */
+#tsparticles {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
