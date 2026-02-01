@@ -1,23 +1,13 @@
-/* 1. Make the container div and all its children transparent */
-.relative.flex.flex-col.min-h-screen,
-.bg-neutral-50, 
-.dark .dark\:bg-neutral-800, 
-.bg-neutral,
-main,
-section,
-article {
-    background-color: transparent !important;
-}
+/* Base background for the whole site (Project pages, About, etc.) */
 
 
-
-/* 3. Ensure the canvas fills the space */
+/* Particle Container Styling */
 #tsparticles {
     position: fixed !important;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1 !important;
-    pointer-events: none;
+    z-index: -10 !important; /* Forces it behind everything */
+    pointer-events: none !important; /* Allows you to click buttons on top of it */
 }
