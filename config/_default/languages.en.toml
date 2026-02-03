@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "Home"
 
 [params]
   displayName = "EN"
@@ -16,13 +16,13 @@ title = "Blowfish"
 
 [params.author]
   name = "Marcus Strauss"
-  email = "youremail@example.com"
+  email = "marcus-strauss@ms-marketing.ca"
   image = "https://media.licdn.com/dms/image/v2/D4E03AQFe2j13vNyQ_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715849451101?e=2147483647&v=beta&t=Nq2bxG51vNNgydR9osYycfs6oGbSfx7UG_0YHkEIdyw"
   imageQuality = 96
-  headline = ""
-  bio = "A little bit about you"
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
+  # headline = ""
+  # bio = "A little bit about you"
+  links = [
+{ email = "mailto:marcus-strauss@ms-marketing.ca" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -35,7 +35,7 @@ title = "Blowfish"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/username" },
+{ github = "https://github.com/Marcus-TG" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
@@ -73,4 +73,4 @@ title = "Blowfish"
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
-#   ]
+]
