@@ -1,13 +1,22 @@
-/* Base background for the whole site (Project pages, About, etc.) */
-
-
-/* Particle Container Styling */
+/* 2. Particle Container (Keep this as is) */
 #tsparticles {
     position: fixed !important;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -10 !important; /* Forces it behind everything */
-    pointer-events: none !important; /* Allows you to click buttons on top of it */
+    z-index: -10 !important;
+    pointer-events: none !important;
+}
+
+/* 2. Target EVERYTHING specifically */
+html, body, div, p, span, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+/* 3. Make the main name extra sharp */
+h1 {
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+}
 }

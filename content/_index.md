@@ -4,7 +4,7 @@ showTittle: false
 ---
 
 {{< typeit
-  tag=h2
+  tag=h1
   speed=50
   breakLines=false
   loop=true
