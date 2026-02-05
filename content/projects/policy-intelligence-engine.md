@@ -1,5 +1,5 @@
 ---
-title: "Autonomous Knowledge Retrieval Engine"
+title: "AI Policy Assistant"
 date: 2026-01-04
 description: "An enterprise-grade RAG pipeline that synchronizes cloud storage with a vector database to provide real-time, context-aware AI assistance."
 tags: ["AI/LLM", "Vector Databases", "Automation", "Architecture"]
