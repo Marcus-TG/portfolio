@@ -1,0 +1,24 @@
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://n8n.ducksonaboat.ca/webhook/7b18315d-c751-4821-bc51-7ced35b8a8b9/chat',
+		webhookConfig: {
+			method: 'POST'
+		},
+		mode: 'window',
+		chatButtonBackgroundColor: '#1e293b', // Matches Blowfish dark mode
+		title: 'Marcus AI',
+		description: 'Ask me about my projects or technical experience.',
+		firstMessage: 'Hi! I\'m Marcus\'s AI. How can I help you today?',
+		placeholder: 'Type your question...',
+	});
+</script>
+
+<style>
+    /* This ensures the chat bubble stays on top of Blowfish elements */
+    .n8n-chat-widget {
+        z-index: 9999;
+    }
+</style>
