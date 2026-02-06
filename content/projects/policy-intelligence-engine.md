@@ -6,6 +6,8 @@ tags: ["AI/LLM", "Vector Databases", "Automation", "Architecture"]
 showTableOfContents: true
 ---
 
+![AI Policy Workflow Diagram](policy-bot.png)
+
 ## Project Overview
 
 I engineered a **Retrieval-Augmented Generation (RAG)** system designed to bridge the gap between static corporate documentation and interactive AI. The system autonomously monitors internal directories, processes unstructured data, and provides a conversational interface for complex policy queries.
