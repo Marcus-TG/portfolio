@@ -1,24 +1,46 @@
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-	createChat({
-		webhookUrl: 'https://n8n.ducksonaboat.ca/webhook/7b18315d-c751-4821-bc51-7ced35b8a8b9/chat',
-		webhookConfig: {
-			method: 'POST'
-		},
-		mode: 'window',
-		chatButtonBackgroundColor: '#1e293b', // Matches Blowfish dark mode
-		title: 'Marcus AI',
-		description: 'Ask me about my projects or technical experience.',
-		firstMessage: 'Hi! I\'m Marcus\'s AI. How can I help you today?',
-		placeholder: 'Type your question...',
-	});
-</script>
-
 <style>
-    /* This ensures the chat bubble stays on top of Blowfish elements */
+    /* 1. Force the widget to sit on top of everything */
     .n8n-chat-widget {
-        z-index: 9999;
+        z-index: 9999 !important;
+        bottom: 20px !important;
+        right: 20px !important; 
+        left: auto !important; /* Prevents it from sticking to the left */
+    }
+
+    /* 2. Force the background color on the chat window itself */
+    .n8n-chat-window {
+        background-color: #1e293b !important; /* Dark Slate Blue */
     }
 </style>
+
+<script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+        webhookUrl: 'https://n8n.ducksonaboat.ca/webhook/7b18315d-c751-4821-bc51-7ced35b8a8b9/chat',
+        mode: 'window',
+        
+        // This 'i18n' block fixes the title/subtitle
+        i18n: {
+            en: {
+                title: 'Marcus AI',
+                subtitle: 'Infrastructure & Automation',
+            },
+        },
+
+        initialMessages: [
+            'Hi! Ask me about my server stack or my RAG pipeline.'
+        ],
+
+        // 3. Updated Style Object for the Widget Internals
+        style: {
+            width: '400px',
+            height: '600px',
+            defaultOpen: false,
+            theme: 'dark', // Tells n8n to use dark mode defaults
+            position: 'bottom-right', // Explicitly tells n8n where to dock
+            backgroundColor: '#1e293b', // Background for the bubble
+        },
+    });
+</script>
