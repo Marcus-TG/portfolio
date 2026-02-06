@@ -10,7 +10,7 @@ showTittle: false
   loop=true
 >}}
 Server Technician
-System Engineer
+System Admin
 Automation Architect
 IT Specialist
 {{< /typeit >}}
